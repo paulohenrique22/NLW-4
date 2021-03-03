@@ -19,4 +19,13 @@
 .leftContainer {
 
 }
+/* Responsive */
+@media only screen and (max-width: 940px) {
+
+    .container section {
+      grid-template-columns: 1fr;
+      gap: 6.25rem;
+      margin-bottom: 2rem;
+    }
+}
   
