@@ -11,6 +11,7 @@
     justify-content: center;
 
     text-align: center;
+    padding: 2rem;
 }
 
 .challengeNotActive {
@@ -104,4 +105,18 @@
 
 .challengeActive footer button:hover{
     filter:brightness(0.9);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 940px) {
+
+    .challengeNotActive {
+        margin-top: 2rem;
+    }
+
+    .challengeActive main {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
