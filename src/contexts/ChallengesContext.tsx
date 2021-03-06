@@ -43,13 +43,13 @@ export function ChallengesProvider({ children }:ChallengesProviderProps) {
     }
 
     function startNewChallenge() {
-        const randomChallengesIndex = Math.floor(Math.random() * challenges.length + 1);
+        const randomChallengesIndex = Math.floor(Math.random() * challenges.length);
         const challenge = challenges[randomChallengesIndex];
         setActiveChallenge(challenge);
 
         new Audio('/notification.mp3').play();
         
-        if (Notification.permission == 'granted'){
+        if (Notification.permission == 'granted' && challenge){
             new Notification('Novo desafio ',{
                 body:`Um novo desafio foi liberado valendo ${challenge.amount} exp`,
                 icon:'favicon.png',
