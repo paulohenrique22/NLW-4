@@ -12,8 +12,8 @@ export function Countdown() {
         startCountDown
     } = useContext(CountdownContext);
 
-    const [minuteLeft, minuteRight]: any = String(minutes).padStart(2, '0');
-    const [secoundLeft, secoundRight]: any = String(secounds).padStart(2, '0');
+    const [minuteLeft, minuteRight]: any = String(minutes).padStart(2, '0').split('');
+    const [secoundLeft, secoundRight]: any = String(secounds).padStart(2, '0').split('');
 
 
     return (

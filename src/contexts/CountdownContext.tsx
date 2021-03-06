@@ -33,8 +33,6 @@ export function CountdownProvider({children}:CountdownProviderProps){
     const minutes = Math.floor(time / 60);
     const secounds = time % 60;
 
-    // const [minuteLeft, minuteRight]: any = String(minutes).padStart(2, '0').split('');
-    // const [secoundLeft, secoundRight]: any = String(secounds).padStart(2, '0').split('');
 
     function startCountDown() {
         setActive(true);

@@ -106,12 +106,9 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
         let currentExperience = Number(Cookies.get('currentExperience'));
         let challengesCompleted = Number(Cookies.get('challengesCompleted'));
 
-        if (level && currentExperience && challengesCompleted) {
-            setLevel(level)
-            setCurrentExperience(currentExperience)
-            setchallengesCompleted(challengesCompleted)
-
-        }
+        setLevel(level)
+        setCurrentExperience(currentExperience)
+        setchallengesCompleted(challengesCompleted)
 
     }, [])
 
